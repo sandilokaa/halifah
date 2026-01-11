@@ -1,5 +1,3 @@
-"use client";
-
 type StatItemProps = {
   value: string;
   label: string;

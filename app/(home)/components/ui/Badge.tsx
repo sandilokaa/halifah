@@ -1,5 +1,3 @@
-"use client";
-
 import * as React from "react";
 import { cn } from "@/utils/cn";
 import { Slot } from "@radix-ui/react-slot";

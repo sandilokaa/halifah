@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { LongButton } from "../ui/LongButton";
-import { MENUS } from "@/services/home/hero/mock/navbar-item-mock";
 import { useState } from "react";
 import { Dot } from "lucide-react";
+
+export const MENUS = ["Features", "Problem", "About Us", "Solutions", "FAQ"];
 
 export default function NavbarLandingPage() {
   const [active, setActive] = useState("Features");
