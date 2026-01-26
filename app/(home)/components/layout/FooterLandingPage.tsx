@@ -15,7 +15,7 @@ export default function FooterLandingPage() {
           </div>
         </div>
         <div className="col-span-3" />
-        <div className="col-span-6 grid grid-cols-2 gap-x-10">
+        <div className="col-span-6 grid grid-cols-2 gap-x-20">
           <div className="flex flex-col gap-y-5 text-[#1E1E1E]">
             <p className="text-[20px] font-bold">QUICK LINKS</p>
             <div className="flex flex-col gap-y-4 text-[#1E1E1E] font-medium">

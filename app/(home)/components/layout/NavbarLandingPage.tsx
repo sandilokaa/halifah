@@ -3,14 +3,21 @@ import { LongButton } from "../ui/LongButton";
 import { useState } from "react";
 import { Dot } from "lucide-react";
 
-export const MENUS = ["Features", "Problem", "About Us", "Solutions", "FAQ"];
+export const MENUS = [
+  "Home",
+  "Features",
+  "Problem",
+  "About Us",
+  "Solutions",
+  "FAQ",
+];
 
 export default function NavbarLandingPage() {
-  const [active, setActive] = useState("Features");
+  const [active, setActive] = useState("Home");
 
   return (
     <div className="grid grid-cols-12 w-full">
-      <div className="col-span-3 flex items-center">
+      <div className="col-span-2 flex items-center">
         <Image
           src={"/images/logo/halifah-logo.svg"}
           alt="Halifah App"
@@ -18,7 +25,7 @@ export default function NavbarLandingPage() {
           height={40}
         />
       </div>
-      <div className="col-span-6 flex justify-center items-center gap-x-5 px-2 py-1.5 bg-white rounded-full w-fit mx-auto">
+      <div className="col-span-8 flex justify-center items-center gap-x-5 px-2 py-1.5 bg-white rounded-full w-fit mx-auto">
         {MENUS.map((menu) => (
           <LongButton
             key={menu}
@@ -34,7 +41,7 @@ export default function NavbarLandingPage() {
           />
         ))}
       </div>
-      <div className="col-span-3 gap-x-2 flex justify-end items-center">
+      <div className="col-span-2 gap-x-2 flex justify-end items-center">
         <LongButton text="Login" variant={"ghost"} />
         <LongButton text="Sign Up" />
       </div>
