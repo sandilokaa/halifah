@@ -1,5 +1,7 @@
-import { AlertCircle } from "lucide-react";
+import { AlertCircle, MoveUpRight } from "lucide-react";
 import { Badge } from "../components/ui/Badge";
+import ProblemCard from "../components/ui/ProblemCard";
+import { CircleButton } from "../components/ui/CircleButton";
 
 export default function ProblemSection() {
   return (
@@ -24,7 +26,59 @@ export default function ProblemSection() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-x-5"></div>
+        <div className="grid grid-cols-12 gap-x-6 mt-15 items-stretch">
+          <div className="col-span-4 h-full">
+            <ProblemCard
+              image="/images/general/problem-one.png"
+              title="Manual Nutrition Analysis Takes Too Much Time"
+              description="Nutritionists still calculate calories, macros, and TDEE by hand. This slows down consultations and increases the chance of errors."
+            />
+          </div>
+          <div className="col-span-4 h-full">
+            <div
+              className="
+                relative h-full flex flex-col overflow-hidden rounded-2xl
+                py-6 px-4
+
+                bg-[linear-gradient(to_bottom_left,#F8F8F8_0%,#B5D5FF_60%,#6CABFF_100%)]
+
+                before:content-['']
+                before:absolute before:inset-0
+                before:bg-[url('/images/noise/noise-bg-hero.svg')]
+                before:opacity-[0.08]
+                before:pointer-events-none
+              "
+            >
+              <div className="relative h-full justify-between flex flex-col">
+                <Badge text="Inefficient Recall Processing" />
+                <div className="flex flex-col gap-y-4 mt-6">
+                  <p className="font-semibold text-[22px] text-[#FFFFFF]">
+                    24-Hour Recalls Are Repetitive and Hard to Process
+                  </p>
+                  <p className="font-medium text-[#FFFFFF]">
+                    Food entries must be retyped, converted, and analyzed one by
+                    one, creating unnecessary manual work every single day for
+                    nutrition professionals.
+                  </p>
+                </div>
+                <div className="flex justify-between items-center mt-8">
+                  <p className="font-medium text-[#FFFFFF]">Learn More</p>
+                  <CircleButton
+                    variant={"secondary"}
+                    icon={<MoveUpRight size={24} />}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-span-4 h-full">
+            <ProblemCard
+              image="/images/general/problem-three.png"
+              title="Client Data Is Scattered and Difficult to Track"
+              description="Food logs, personal data, and reports live in different tools—making it hard to monitor progress or prepare for follow-up consultations."
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -12,21 +12,25 @@ const longButtonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-[#1E1E1E] text-white",
-        secondary: "bg-[#F6F6F6] text-[#1E1E1E]",
+        primary:
+          "bg-[#1E1E1E] text-white hover:bg-[#2A2A2A] active:bg-[#000000]",
+        secondary:
+          "bg-[#F6F6F6] text-[#1E1E1E] hover:bg-[#EAEAEA] active:bg-[#DADADA]",
         plain: "bg-transparent text-[#1E1E1E] border border-[#1E1E1E]",
-        ghost: "bg-transparent text-[#1E1E1E]",
+        ghost:
+          "bg-transparent text-[#1E1E1E] hover:bg-[#F0F0F0] active:bg-[#E0E0E0]",
       },
       size: {
         default: "py-3 px-6",
         sm: "py-[10px] px-4",
       },
     },
+
     defaultVariants: {
       variant: "primary",
       size: "default",
     },
-  }
+  },
 );
 
 type LongButtonProps = React.ComponentProps<"button"> &

@@ -1,3 +1,5 @@
+import FooterLandingPage from "./components/layout/FooterLandingPage";
+
 export default function LandingPageLayout({
   children,
 }: {
@@ -6,6 +8,7 @@ export default function LandingPageLayout({
   return (
     <div className="min-h-screen bg-[#FBFDFF] px-7.5 pt-7.5 pb-15">
       {children}
+      <FooterLandingPage />
     </div>
   );
 }

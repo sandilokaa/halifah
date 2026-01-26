@@ -10,7 +10,7 @@ import {
 import { Badge } from "../components/ui/Badge";
 import { LongButton } from "../components/ui/LongButton";
 import { StatItem } from "../components/ui/HeroStatItem";
-import NavbarLandingPage from "../components/layout/Navbar";
+import NavbarLandingPage from "../components/layout/NavbarLandingPage";
 import { HeroCard } from "../components/ui/HeroCard";
 import Image from "next/image";
 
