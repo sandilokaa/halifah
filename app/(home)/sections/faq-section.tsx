@@ -28,7 +28,6 @@ export default function FAQSection() {
           <div className="col-span-6">
             <CustomAccordion items={faqItems} />
           </div>
-          {/* <div className="col-span-5 flex items-end"></div> */}
         </div>
         <div className="mt-15">
           <div className="grid grid-cols-12">
