@@ -1,7 +1,7 @@
 import { AlertCircle, MoveUpRight } from "lucide-react";
-import { Badge } from "../components/ui/Badge";
-import ProblemCard from "../components/ui/ProblemCard";
-import { CircleButton } from "../components/ui/CircleButton";
+import { Badge } from "../components/ui/badge";
+import ProblemCard from "../components/ui/problem-card";
+import { CircleButton } from "../components/ui/circle-button";
 
 export default function ProblemSection() {
   return (

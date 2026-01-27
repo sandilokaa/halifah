@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import FooterLandingPage from "./components/layout/FooterLandingPage";
+import FooterLandingPage from "./components/layout/footer-landing-page";
 
 export default function LandingPageLayout({
   children,

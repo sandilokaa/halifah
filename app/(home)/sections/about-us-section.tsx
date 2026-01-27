@@ -1,5 +1,5 @@
-import { LongButton } from "../components/ui/LongButton";
-import { Badge } from "../components/ui/Badge";
+import { Badge } from "../components/ui/badge";
+import { LongButton } from "../components/ui/long-button";
 import { BookOpen } from "lucide-react";
 
 export default function AboutUsSection() {

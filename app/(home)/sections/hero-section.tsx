@@ -7,11 +7,11 @@ import {
   UsersRound,
   Zap,
 } from "lucide-react";
-import { Badge } from "../components/ui/Badge";
-import { LongButton } from "../components/ui/LongButton";
-import { StatItem } from "../components/ui/HeroStatItem";
-import NavbarLandingPage from "../components/layout/NavbarLandingPage";
-import { HeroCard } from "../components/ui/HeroCard";
+import { Badge } from "../components/ui/badge";
+import { LongButton } from "../components/ui/long-button";
+import { StatItem } from "../components/ui/hero-stat-item";
+import NavbarLandingPage from "../components/layout/navbar-landing-page";
+import { HeroCard } from "../components/ui/hero-card";
 import Image from "next/image";
 
 export default function HeroSection() {
@@ -21,7 +21,7 @@ export default function HeroSection() {
         relative overflow-hidden
         px-12.5 pt-6 pb-12.5
         bg-[radial-gradient(1200px_1000px_at_top,#F8F8F8_41%,#B5D5FF_77%,#6CABFF_100%)]
-        rounded-[20px] border border-[#DCDCDC]
+        rounded-4xl border border-[#DCDCDC]
         before:content-['']
         before:absolute before:inset-0
         before:bg-[url('/images/noise/noise-bg-hero.svg')]

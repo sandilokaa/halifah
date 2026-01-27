@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { LongButton } from "../ui/LongButton";
+import { LongButton } from "../ui/long-button";
 import { useState } from "react";
 import { Dot } from "lucide-react";
 

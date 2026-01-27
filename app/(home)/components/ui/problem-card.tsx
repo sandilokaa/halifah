@@ -1,5 +1,5 @@
 import { MoveUpRight } from "lucide-react";
-import { CircleButton } from "./CircleButton";
+import { CircleButton } from "./circle-button";
 import Image from "next/image";
 
 interface ProblemCardProps {

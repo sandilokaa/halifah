@@ -1,4 +1,4 @@
-import { CircleButton } from "../ui/CircleButton";
+import { CircleButton } from "../ui/circle-button";
 import Image from "next/image";
 
 export default function FooterLandingPage() {
