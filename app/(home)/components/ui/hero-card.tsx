@@ -2,9 +2,6 @@ import * as React from "react";
 import { cn } from "@/utils/cn";
 import { cva } from "class-variance-authority";
 
-/* =======================
-  Base Card Variants
-======================= */
 const heroCardVariants = cva("p-4 rounded-2xl drop-shadow-sm flex flex-col", {
   variants: {
     variant: {
@@ -18,9 +15,6 @@ const heroCardVariants = cva("p-4 rounded-2xl drop-shadow-sm flex flex-col", {
   },
 });
 
-/* =======================
-  Variant Style Mapping
-======================= */
 const variantStyles = {
   default: {
     icon: "bg-[#1E1E1E] text-white",
@@ -39,9 +33,6 @@ const variantStyles = {
   },
 } as const;
 
-/* =======================
-  Props
-======================= */
 type HeroCardVariant = "default" | "dark" | "soft";
 
 type HeroCardProps = {
@@ -54,9 +45,6 @@ type HeroCardProps = {
   className?: string;
 };
 
-/* =======================
-  Component
-======================= */
 export function HeroCard({
   icon,
   title,
@@ -83,7 +71,7 @@ export function HeroCard({
           <div
             className={cn(
               "py-0.5 px-1 rounded-sm text-sm font-medium",
-              styles.badge
+              styles.badge,
             )}
           >
             {badge}
