@@ -1,4 +1,10 @@
-export const faqItems = [
+export interface FAQItem {
+  value: string;
+  title: string;
+  content: string;
+}
+
+export const faqItems: FAQItem[] = [
   {
     value: "faq-1",
     title: "Who is this platform designed for?",

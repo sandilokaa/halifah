@@ -2,6 +2,7 @@ import { Flame, Utensils } from "lucide-react";
 import { Badge } from "../components/ui/badge";
 import Image from "next/image";
 import { SolutionCard } from "../components/ui/solution-card";
+import SolutionAccordion from "../components/ui/solution-accordion";
 
 export default function SolutionSection() {
   return (
@@ -49,6 +50,9 @@ export default function SolutionSection() {
               description="Eliminate manual calculations and reduce errors by letting the system handle calorie, macro, and TDEE analysis automatically."
             />
           </div>
+        </div>
+        <div className="w-full mt-20">
+          <SolutionAccordion />
         </div>
       </div>
     </div>
