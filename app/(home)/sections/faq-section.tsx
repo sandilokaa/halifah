@@ -1,7 +1,7 @@
 import { BookOpen } from "lucide-react";
 import { Badge } from "../components/ui/badge";
-import CustomAccordion from "../components/ui/custom-accordion";
 import { faqItems } from "@/const/home/faq";
+import FAQAccordion from "../components/ui/faq-accordion";
 
 export default function FAQSection() {
   return (
@@ -26,7 +26,7 @@ export default function FAQSection() {
           </div>
           <div className="col-span-1" />
           <div className="col-span-6">
-            <CustomAccordion items={faqItems} />
+            <FAQAccordion items={faqItems} />
           </div>
         </div>
         <div className="mt-15">

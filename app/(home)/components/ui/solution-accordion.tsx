@@ -25,24 +25,26 @@ export default function SolutionAccordion() {
                 [&>svg]:hidden
               "
             >
-              <div className="grid grid-cols-12 w-full">
+              <div className="grid grid-cols-12 w-full items-start">
                 <div className="col-span-1 flex items-center">
-                  <span className="text-muted-foreground text-lg">
+                  <span className="text-muted-foreground text-xl">
                     {item.number}
                   </span>
                 </div>
-                <div className="col-span-5">
-                  <h3 className="text-[28px] font-semibold text-[#1E1E1E]">
+                <div className="col-span-5 flex items-start">
+                  <p className="text-[28px] font-semibold text-[#1E1E1E] leading-none">
                     {item.title}
-                  </h3>
+                  </p>
                 </div>
-                <div className="col-span-5">
+                <div className="col-span-5 items-start">
                   <p
                     className="
                       text-[#1E1E1E]
                       transition-opacity
                       opacity-70
                       group-data-[state=open]:opacity-100
+                      text-[16px]
+                      leading-relaxed
                     "
                   >
                     {item.description}

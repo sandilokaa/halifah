@@ -13,17 +13,17 @@ interface AccordionItemData {
   content: string;
 }
 
-interface CustomAccordionProps {
+interface FAQAccordionProps {
   items: AccordionItemData[];
   type?: "single" | "multiple";
   collapsible?: boolean;
 }
 
-export default function CustomAccordion({
+export default function FAQAccordion({
   items,
   type = "single",
   collapsible = true,
-}: CustomAccordionProps) {
+}: FAQAccordionProps) {
   return (
     <Accordion type={type} collapsible={collapsible} className="w-full">
       {items.map((item) => (
@@ -31,7 +31,7 @@ export default function CustomAccordion({
           <AccordionTrigger className="text-left text-[#1E1E1E] text-[18px] font-semibold hover:no-underline [&>span]:hover:no-underline">
             {item.title}
           </AccordionTrigger>
-          <AccordionContent className="text-sm text-[#1E1E1E] text-[16px] font-medium">
+          <AccordionContent className="text-[#1E1E1E] text-[16px] font-medium">
             {item.content}
           </AccordionContent>
         </AccordionItem>
