@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { solutionItems } from "@/const/home/solution";
+import Image from "next/image";
 
 export default function SolutionAccordion() {
   return (
@@ -67,7 +68,16 @@ export default function SolutionAccordion() {
               </div>
             </AccordionTrigger>
 
-            <AccordionContent className="pb-10"></AccordionContent>
+            <AccordionContent className="pb-10">
+              <Image
+                src={item.image}
+                alt="Solution Image"
+                width={1280}
+                height={503}
+                className="w-full h-auto rounded-xl"
+                loading="lazy"
+              />
+            </AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>

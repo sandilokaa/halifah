@@ -13,7 +13,7 @@ export const solutionItems: SolutionItem[] = [
     title: "Visual Progress & Insight Charts",
     description:
       "Understand client progress at a glance with clear nutrition and consumption charts that turn raw data into actionable insights for better recommendations.",
-    image: "/images/feature-charts.jpg",
+    image: "/images/general/solution-one.png",
   },
   {
     id: "pdf",
@@ -21,7 +21,7 @@ export const solutionItems: SolutionItem[] = [
     title: "One-Click PDF Report Export",
     description:
       "Generate clean, professional nutrition reports instantly in PDF format—ready to share with clients after every consultation or follow-up.",
-    image: "/images/feature-pdf.jpg",
+    image: "/images/general/solution-two.png",
   },
   {
     id: "profile",
@@ -29,6 +29,6 @@ export const solutionItems: SolutionItem[] = [
     title: "Secure Client Profiles",
     description:
       "Store personal data, nutrition history, and recall records securely in one centralized system, making long-term client tracking simple and reliable.",
-    image: "/images/feature-profile.jpg",
+    image: "/images/general/solution-three.png",
   },
 ];

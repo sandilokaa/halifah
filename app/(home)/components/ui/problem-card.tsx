@@ -24,6 +24,7 @@ export default function ProblemCard({
             alt="Problem Image"
             fill
             className="object-cover"
+            loading="lazy"
           />
         </div>
         <div className="flex flex-col gap-y-4 mt-6">
