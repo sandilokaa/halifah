@@ -54,6 +54,7 @@ export default function SolutionAccordion() {
                 <div className="col-span-1 flex justify-end">
                   <div
                     className="
+                      cursor-pointer
                       flex h-9 w-9 items-center justify-center rounded-full
                       bg-muted text-muted-foreground
                       transition-all duration-300
