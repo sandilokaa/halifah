@@ -1,4 +1,5 @@
 import AboutUsSection from "./sections/about-us-section";
+import CTASection from "./sections/cta-section";
 import FAQSection from "./sections/faq-section";
 import HeroSection from "./sections/hero-section";
 import ProblemSection from "./sections/problem-section";
@@ -12,6 +13,7 @@ export default function LandingPage() {
       <ProblemSection />
       <SolutionSection />
       <FAQSection />
+      <CTASection />
     </div>
   );
 }

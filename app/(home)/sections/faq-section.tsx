@@ -29,12 +29,6 @@ export default function FAQSection() {
             <FAQAccordion items={faqItems} />
           </div>
         </div>
-        <div className="mt-15">
-          <div className="grid grid-cols-12">
-            <div className="col-span-6"></div>
-            <div className="col-span-6"></div>
-          </div>
-        </div>
       </div>
     </div>
   );

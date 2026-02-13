@@ -1,4 +1,4 @@
-import { Flame, Utensils } from "lucide-react";
+import { Calculator, Flame, Utensils } from "lucide-react";
 import { Badge } from "../components/ui/badge";
 import Image from "next/image";
 import { SolutionCard } from "../components/ui/solution-card";
@@ -45,7 +45,7 @@ export default function SolutionSection() {
               description="Log daily food intake with an integrated nutrition database that automatically calculates calories and macros—saving time and eliminating repetitive manual input."
             />
             <SolutionCard
-              icon={<Flame size={24} />}
+              icon={<Calculator size={24} />}
               title="Automatic Nutrition & TDEE Calculation"
               description="Eliminate manual calculations and reduce errors by letting the system handle calorie, macro, and TDEE analysis automatically."
             />
